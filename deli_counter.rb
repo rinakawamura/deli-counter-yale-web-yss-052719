@@ -4,11 +4,10 @@ def line(katz_deli)
   if katz_deli.size == 0
     puts "The line is currently empty."
   else
-    line = "The line is currently: "
-    for i in 0...katz_deli.size - 1
-      line << "#{i + 1}. #{katz_deli[i]} "
+    line = "The line is currently:"
+    for i in 0...katz_deli.size
+      line << " #{i + 1}. #{katz_deli[i]}"
     end
-    line << "#{katz_deli.size}. #{katz_deli[katz_deli.size - 1]}"
     puts line
   end
 end
